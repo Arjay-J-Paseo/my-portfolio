@@ -20,50 +20,38 @@ function Skills() {
   const skills = [
     { 
       name: 'JavaScript', 
-      level: 85, 
       icon: 'fab fa-js', 
-      color: '#f7df1e', 
-      description: 'Advanced',
+      color: '#f7df1e',
       image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'
     },
     { 
       name: 'React', 
-      level: 80, 
       icon: 'fab fa-react', 
-      color: '#61dafb', 
-      description: 'Intermediate',
+      color: '#61dafb',
       image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
     },
     { 
       name: 'Python', 
-      level: 75, 
       icon: 'fab fa-python', 
-      color: '#3776ab', 
-      description: 'Intermediate',
+      color: '#3776ab',
       image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg'
     },
     { 
       name: 'HTML5', 
-      level: 90, 
       icon: 'fab fa-html5', 
-      color: '#e34f26', 
-      description: 'Expert',
+      color: '#e34f26',
       image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'
     },
     { 
       name: 'CSS3', 
-      level: 85, 
       icon: 'fab fa-css3-alt', 
-      color: '#1572b6', 
-      description: 'Advanced',
+      color: '#1572b6',
       image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'
     },
     { 
       name: 'Node.js', 
-      level: 70, 
       icon: 'fab fa-node', 
-      color: '#339933', 
-      description: 'Intermediate',
+      color: '#339933',
       image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg'
     }
   ]
@@ -109,7 +97,7 @@ function Skills() {
 
         <div className="reveal" style={{
           position: 'relative',
-          maxWidth: '600px',
+          maxWidth: '500px',
           margin: '0 auto',
           padding: '40px 20px'
         }}>
@@ -152,27 +140,7 @@ function Skills() {
               {currentSkill.name}
             </h3>
             
-            <p style={{ color: '#818cf8', marginBottom: '30px', fontSize: '14px' }}>
-              {currentSkill.description}
-            </p>
-            
-            <div style={{ marginBottom: '15px' }}>
-              <div style={{
-                width: '100%',
-                height: '10px',
-                background: 'rgba(255, 255, 255, 0.1)',
-                borderRadius: '5px',
-                overflow: 'hidden'
-              }}>
-                <div style={{
-                  width: `${currentSkill.level}%`,
-                  height: '100%',
-                  background: `linear-gradient(90deg, ${currentSkill.color}, #818cf8)`,
-                  borderRadius: '5px',
-                  transition: 'width 0.5s ease'
-                }}></div>
-              </div>
-            </div>
+            {/* Description and Progress Bar removed */}
           </div>
 
           <button

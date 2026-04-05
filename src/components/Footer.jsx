@@ -16,7 +16,7 @@ function Footer() {
     }}>
       <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
         <p style={{ color: '#94a3b8', marginBottom: '20px' }}>
-          © 2026 RJ. Build in React.  {/* <- This is the text you see */}
+          © 2026 RJ. Built in React.
         </p>
         <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
           <button onClick={() => scrollToSection('home')} style={{ color: '#94a3b8', background: 'none', border: 'none', cursor: 'pointer', fontSize: '14px' }}>Home</button>
